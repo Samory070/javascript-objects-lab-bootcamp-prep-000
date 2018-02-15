@@ -20,7 +20,8 @@ function destructivelyDeleteFromObjectByKey(object, key) {
   var obj = Object.assign({}, object, key)
   delete object.key
   delete obj[key]
-  return obj, object
+  return obj
+  console.log(object)
 
 
 }
